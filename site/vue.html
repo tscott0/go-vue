@@ -7,7 +7,8 @@
   <meta name="description" content="">
   <meta name="author" content="Tom Scott">
 
-  <link rel="stylesheet" href="/s/css/main.css?v=1.0">
+  <link href="/s/css/main.css?v=1.0" rel="stylesheet">
+  <link href="/s/css/prism.css" rel="stylesheet" />
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,12 +16,37 @@
 </head>
 
 <body>
+	<h1>golang and vue.js</h2>
+
+	<h2>vue.js model</h2>
 	<div id="app">
 	  <p>{{ message }}</p>
 	  <input v-model="message">
 	</div>
 
-  <script src="s/js/vue.js"></script>
-  <script src="s/js/app.js"></script>
+	<h2>Preformatted</h2>
+	<p>The following section is preformatted. <a href="http://www.google.co.uk">This</a> is an example of a hyperlink.</p>
+	<pre>
+code,
+pre {
+  background: #eee;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+}
+	</pre>
+	<p>This code is formatted with prism.js</p>
+
+	<pre class="line-numbers"><code class="language-css">p { color: red }</code></pre>
+
+  <script src="/s/js/vue.js"></script>
+  <script src="/s/js/app.js"></script>
+  <script src="/s/js/prism.js"></script>
 </body>
 </html>
