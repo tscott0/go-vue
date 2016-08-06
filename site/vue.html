@@ -45,6 +45,22 @@ pre {
 
 	<pre class="line-numbers"><code class="language-css">p { color: red }</code></pre>
 
+	<h2>vue.js and prism.js</h2>
+	<div id="example">
+		<div id="controls">
+			<button v-on:click="rendergo">GO</button>
+			<button v-on:click="rendercss">CSS</button>
+		</div>
+
+		<div id="divcode">
+			<pre id="precode"><code id="output" class="language-css">p { color: green }</code></pre>
+		</div>
+
+	</div>
+		<!--
+		   -<pre class="line-numbers"><code class="language-css">{{ message }}</code></pre>
+		   -->
+
   <script src="/s/js/vue.js"></script>
   <script src="/s/js/app.js"></script>
   <script src="/s/js/prism.js"></script>
